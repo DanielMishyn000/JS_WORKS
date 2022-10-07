@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<!-- Задание 4. Пользователь вводит прибыль фирмы за год
+(4) месяцев). Необходимо определить месяц, в котором
+прибыль была максимальна и месяц, в котором прибыль
+была минимальна. -->
+
+
+<body>
+
+	<p>Введите первое число A <input type="text" id="A">    </p>
+	<p>Введите второе число B <input type="text" id="B">    </p>
+	<p>Введите третье число C <input type="text" id="C">    </p>
+	<p>Minimum <input type="text" id="D">    </p>
+	<p>Maximum <input type="text" id="E">    </p>
+
+	<p><input type="button" value="Минимум" onclick="min1()"></p>
+	<p><input type="button" value="Максимум" onclick="max1()"></p>
+
+	<!-- <p>Результат    <input type="text" id="slove"></p> -->
+
+	<script>
+
+		let y = document.getElementById("D"); 
+		let z = document.getElementById("E"); 
+
+		function min1() {
+			let a = parseInt(document.getElementById("A").value);
+			let b = parseInt(document.getElementById("B").value);
+			let c = parseInt(document.getElementById("C").value);
+			let min = a;
+			
+			if (min > b) {
+				min = b;
+				y.value = min;
+			}
+			if (min > c){
+				min = c;
+				y.value = min;
+			}
+			else {
+				y.value = a;
+			}
+
+		} 
+		function max1() {
+			let a = parseInt(document.getElementById("A").value);
+			let b = parseInt(document.getElementById("B").value);
+			let c = parseInt(document.getElementById("C").value);
+			let max = a;
+
+			if (max < b) {
+				max = b;
+				z.value = max;
+			}
+			if (max < c) {
+				max = c;
+				z.value = max;
+			}
+			else {
+				z.value = a;
+			}
+}
+
+
+	</script>
+
+</body>
+
+
+</html>

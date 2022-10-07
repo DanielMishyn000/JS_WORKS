@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<!-- 3адание 3. Пользователь вводит длину сторон пятиугольника, каждая сторона заноситься в массив, необходимо
+вычислить периметр пятиугольника (периметр — сумма
+всех сторон). -->
+<body>
+<p>Ввести длину одной строны пятиуголника:<input type="text" id="A"></p>
+<p>Ввести длину одной строны пятиуголника:<input type="text" id="B"></p>
+<p>Ввести длину одной строны пятиуголника:<input type="text" id="C"></p>
+<p>Ввести длину одной строны пятиуголник:<input type="text" id="D"></p>
+<p>Ввести длину одной строны пятиуголника:<input type="text" id="E"></p>
+
+<p><input type="button" id="result" value="calculate" onclick="rez()"></p>
+
+<p>Result<input type="text" id="R"></p>
+
+	<script>
+		
+
+		function rez() {
+
+			let a = parseInt(document.getElementById("A").value);
+			let b = parseInt(document.getElementById("B").value);
+			let c = parseInt(document.getElementById("C").value);
+			let d = parseInt(document.getElementById("D").value);
+			let e = parseInt(document.getElementById("E").value);
+
+			let n = a+b+c+d+e;
+			
+				document.getElementById("R").value = n;
+			}
+		
+		
+
+
+	</script>
+
+</body>
+
+
+</html>

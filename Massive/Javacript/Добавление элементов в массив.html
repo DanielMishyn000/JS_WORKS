@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Первая программа</title>
+</head>
+<body>
+<script>
+    var a = new Array(1,2,3);
+alert ("Исходный массив: "+a.join(", "));
+if (confirm("Добавить в начало?")) {
+    a.unshift(-2,-1,0);
+} 
+else {
+    a.push(4,5,6);
+}
+alert ("Итоговый массив: "+a.join(", "));
+</script>
+</body>
+</html>

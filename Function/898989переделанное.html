@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+
+<body>
+
+<p>Введите первое число A <input type="text" id="A">    </p>
+<p>Введите второе число B <input type="text" id="B">    </p>
+
+<p><input type="button" value="подтвердить" onclick="printSlove();"></p>
+
+<p>Результат<input type = "text" id="slove" value = "rez"></p>
+
+
+		<script>
+
+			
+			// var c = 0;
+			  
+ 			function printSlove() {
+ 			var a = parseInt(document.getElementById("A").value);
+			var b = parseInt(document.getElementById("B").value);
+ 			var c = a + b;
+
+			document.getElementById("slove").value = c;
+				   
+
+}
+		</script>
+
+</body>
+
+
+</html>

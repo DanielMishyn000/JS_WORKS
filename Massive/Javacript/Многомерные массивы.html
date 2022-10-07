@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Первая программа</title>
+</head>
+<body>
+<script>
+var n=3, //количество строк 
+    m=5; //количество элементов в строке (столбцов) 
+var a = new Array ();
+for (var i=0; i<n; i++) {
+    a[i] = new Array (); //каждый элемент массива тоже массив! 
+    for (var j=0; j<m; j++) {
+        a[i][j] = i*j;
+    }
+}
+</script>
+</body>
+</html>

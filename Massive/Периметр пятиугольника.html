@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Периметр Пятиугольника</title>
+</head>
+<body>
+<script>
+var a = new Array();
+var count = 5;
+var sum = 0;
+for (var i = 0; i < count; i++) {
+a[i]=parseInt(prompt("Введите длину " + (i+1) + " стороны пятиугольника в метрах"));
+sum += a[i];
+}
+alert("Периметр пятиугольника: " + sum + " м");
+</script>
+</body>
+</html>

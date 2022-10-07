@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Первая программа</title>
+</head>
+<body>
+<script>
+var sum = 0;
+      var arr = Array();
+        for (var i=0; i<5; i++)                               /*заполняем массив*/
+            arr[i]=parseInt(prompt("Введите целое число:", ""));  /*заполняем массив*/
+                alert("Оценки: "+arr.join(", "));                 /*заполняем массив*/
+
+                    // начало блока суммирования массива
+function arraySum(array){                                         /*суммирование всего массива*/
+    for(var i = 0; i < array.length; i++){                        /*суммирование всего массива*/
+        sum += array[i];                                          /*суммирование всего массива*/
+}
+return sum;                                                       /*выбрасываем значение SUM за пределы функции*/
+}   
+                    // окончание блока просчёта суммы массива
+
+arraySum(arr);                                                    /*активируем этим тригерром функцию суммирования массива*/
+
+let srednee=sum/5;                                                /*считаем среднее значение*/
+alert("средний балл = " + srednee);
+
+if (srednee < 10){
+      
+      alert ("Нет стипендии");
+    }
+    else {
+      alert ("Есть стипендия");
+    }
+// console.log("средний балл = " +srednee);
+</script>
+</body>
+</html>

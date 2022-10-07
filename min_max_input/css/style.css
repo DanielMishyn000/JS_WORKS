@@ -1,0 +1,147 @@
+body{
+	font-size: 17px;
+	height: 100%;
+	line-height: 1.5;
+	background-color: #e0e0e0;
+	font-family: arial;
+}
+.button{
+	border: 1px solid black;
+	background-color: #2CFFFFFF;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 5px;
+padding-bottom: 20px;
+margin-left: 125px;
+margin-bottom: 50px;
+}
+p{
+	text-align: right;
+	justify-content: right;
+}
+input{
+	border-radius: 5px;
+	height: 22px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+	appearance: none;
+	-moz-appearance: textfield;
+}
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+select{
+	width: 220px;
+	height: 40px;
+	font-size: 17px;
+	border: 1px solid grey;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+	margin-left: 50px;
+}
+select:hover{
+	background-color: #D8D8D8FF;
+	cursor: pointer;
+	transition: 0.5;	
+}
+.button:hover{
+	background-color: #1BEF0FFF;
+	cursor: pointer;
+	transition: 0.5;
+}
+.container_centr{
+	display: block;
+	max-width: 400px;
+	margin: 0 auto;
+
+}.header{
+	width: 300%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #525962FF;
+	border: 1px solid black;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.header__img{
+	margin-top: 6px;
+	margin-right: 100px;
+	margin-left: 20px;
+	position: absolute;
+	left: 0;
+}
+.select{
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+.text{
+	justify-content: right;
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #D8D8D8FC;
+}
+.text_align{
+	text-align: center;
+}
+.text__confirm{
+	display: flex;
+	justify-content: center;
+	padding-left: 50px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+	margin-left: 50px;
+}
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 800px;
+	margin: 0 auto; 
+	min-height: 100%;
+
+
+}
+.link{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #556;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	border: 1px solid black;
+}

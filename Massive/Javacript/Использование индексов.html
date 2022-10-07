@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Первая программа</title>
+</head>
+<body>
+<script>
+    
+    
+var users = new Array();
+users["admin"] = "qxpfr45d";
+users["mama"] = "nf67r";
+users["papa"] = "pwr12aa";
+users["gosti"] = "";
+
+var l = prompt("Введите свой логин:", "gosti");
+var p = prompt("Введите свой пароль:", "");
+ for (let i = 1; i < 4; i++){
+
+    if (p == users[l]) {
+    alert ("Привет!");
+    
+} else if (p==i){
+   alert ("Неверный логин или пароль");  
+
+}
+}
+ 
+
+    
+    
+
+</script>
+</body>
+</html>

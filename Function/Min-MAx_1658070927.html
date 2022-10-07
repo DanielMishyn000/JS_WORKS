@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="box.css">
+</head>
+
+
+<!-- Задание 4. Пользователь вводит прибыль фирмы за год
+(4) месяцев). Необходимо определить месяц, в котором
+прибыль была максимальна и месяц, в котором прибыль
+была минимальна. -->
+
+
+<body>
+
+	<div class="wrapper">
+		<div>
+			<h4>
+				Максимальное и минимальное значение
+			</h4>
+			<hr>	
+
+										<!-- ввод пользовательских данных -->
+			<div class="conteiner01">
+				<p><input class="conteiner01__item" type="text" placeholder="Введите первое число" id="A">    </p>
+				<p><input class="conteiner01__item" type="text" placeholder="Введите второе число" id="B">    </p>
+				<p><input class="conteiner01__item" type="text" placeholder="Введите третье число" id="C">    </p>
+			</div>
+
+
+										<!-- вывод результатов -->
+			<div class="btn">
+				<p><input class="conteiner01__item" type="text" id="D">    </p>
+				<p><input class="conteiner01__item" type="text" id="E">    </p>
+			</div>
+
+
+					<!-- тригер для срабатывания соответствующих функций -->
+			<div class="rezult">
+				<p><input class="rezult conteiner02__item" type="button" value="Минимум" onclick="min1()"></p>
+				<p><input class="rezult conteiner02__item" type="button" value="Максимум" onclick="max1()"></p>
+			</div>
+		</div>
+	</div>	
+
+
+
+	<script>
+		let y = document.getElementById("D"); 
+		let z = document.getElementById("E"); 
+		// let mart = A;
+		// let april = B;
+		// let may = C;
+
+
+		function min1() {
+			let a = parseInt(document.getElementById("A").value);
+			let b = parseInt(document.getElementById("B").value);
+			let c = parseInt(document.getElementById("C").value);
+			y.value = Math.min(a, b, c);
+			document.getElementById("slove2").innerHTML = ("Тест пройден");
+		}
+
+		function max1() {
+			let a = parseInt(document.getElementById("A").value);
+			let b = parseInt(document.getElementById("B").value);
+			let c = parseInt(document.getElementById("C").value);
+			z.value = Math.max(a, b, c);
+		}
+	</script>
+</body>
+</html>

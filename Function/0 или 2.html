@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<!--  Если переменная a равна нулю или равна двум, то прибавьте к ней 7, иначе поделите ее на 10. Выведите новое значение переменной на экран. Проверьте работу скрипта при a, равном 5, 0, -3, 2. -->
+	<script>
+		function start() {
+			let sum = 0;
+			let a = parseInt(prompt("введите число"));
+			if (a == 0 || a == 2) {
+				let sum = a + 7;
+				alert(sum);
+			}
+			else {
+				alert(a / 10);
+			}
+		}
+		start();
+	</script>
+</body>
+
+
+</html>

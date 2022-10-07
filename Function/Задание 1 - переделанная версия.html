@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Задание</title>
+</head>
+<body>
+<script>
+function fizzBuzz () {
+	let num = prompt('vvedi chislo');
+  for(let i = 1; i <= num; i++) {
+    // check if the number is a multiple of 3 and 5
+    if(i % 3 === 0 && i % 5 === 0) {
+      console.log('fizzbuzz')
+    } // check if the number is a multiple of 3
+      else if(i % 3 === 0) {
+      console.log('fizz')
+    } // check if the number is a multiple of 5
+      else if(i % 5 === 0) {
+      console.log('buzz')
+    } else {
+      console.log(i)
+    }
+  }
+}
+fizzBuzz();
+</script>
+</body>
+</html>
+<!--Требуется написать функцию, выводящую в консоль числа от 1 до n, где n — это целое число, которая функция принимает в качестве параметра, с такими условиями:
+вывод fizz вместо чисел, кратных 3;
+вывод buzz вместо чисел, кратных 5;
+вывод fizzbuzz вместо чисел, кратных как 3, так и 5.
+-->

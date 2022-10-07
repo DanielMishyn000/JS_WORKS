@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Первая программа</title>
+</head>
+<body>
+<script>
+var a = new Array(0,1,2,3, 4);
+alert ("Исходный массив: "+a.join(", "));
+if (confirm("Удалить первый?")) {
+    a.shift();
+} 
+else {
+    a.push("8");
+}
+alert ("Итоговый массив: "+a.join(", "));
+</script>
+</body>
+</html>

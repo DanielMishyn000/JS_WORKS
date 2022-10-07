@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+</head>
+<body>
+<script>
+function hello(n){
+    n = (prompt("vvedi n"));
+    if (n==1){
+        return function(x,y){
+            return(x + y);
+        }
+    }
+    else if (n==2){
+        return function(x,y){
+            return(x - y);
+        }
+    }
+    else if (n==3){
+        return function(x,y){
+            return(x * y);
+        }
+    }
+    else if (n==4){
+        return function(x,y){
+            return(x / y);
+        }
+    }
+}
+let act = hello(1);
+console.log (act(2,5));
+act = hello(2);
+console.log (act(2,5));
+act = hello(3);
+console.log (act(2,5));
+act = hello(4);
+console.log (act(2,5));
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+
+<body>
+	<script>
+		var a = new Array();
+	var count = 12;
+	for (var i = 0; i < count; i++) 
+	a[i]=parseInt(prompt("Введите прибыль за " + (i+1) + " месяц"));
+	alert("Минимальная прибыль: " + Math.min(...a) + " Максимальная прибыль: " + Math.max(...a));
+
+	</script>
+</body>
+</html>
