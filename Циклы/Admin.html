@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Задание 5</title>
+</head>
+<body>
+<script>
+  //password qwerty
+  //name Admin
+
+  let a = prompt('Кто там?',  ' ');
+  if (a === 'Admin') {
+    let password = prompt('Your Password: ', ' ');
+    let b = 1;
+    let i = 2;
+     for ( i ; i >= b; i --) { 
+    if (password === 'qwerty'){
+      alert("Hello!");
+    }else if (password === " " || password === null ) {
+      alert('Canceled');
+
+    }else  {   
+         
+      alert('not correctly password Try again: ');
+     
+      password = prompt('You have '  + i + ' attempts yet: ', ' ');
+      
+      }
+    }
+  }
+
+  else if (a === " " || a === null) {
+      alert("Canceled");
+  }else {
+    alert("I dont know you..");
+  }
+</script>
+</body>
+</html>

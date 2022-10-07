@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>ТЕСТ</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+	<div class="wrapper" >
+
+		<!-- верхний headder -->
+		<header class="header">
+			<div class="header">
+				<img class="header__img" src="img/qa_logo.png"width="50" height="30" alt="">
+				<div>Мы изучаем QA !</div>
+			</div>
+		</header>
+
+		<h3 class="select">
+			Мин и мак прибыль за 5 мес. ( масштабируемая)
+		</h3>
+		<div class="container_centr"> 
+			<div class="text">
+				<p>Январь  <input type="number" id="A"></p>
+				<p>Февраль <input type="number" id="B"></p>
+				<p>Март    <input type="number" id="C"></p>
+				<p>Апрель  <input type="number" id="D"></p>
+				<p>Май     <input type="number" id="E"></p>
+				<div class="text__confirm">
+					<input class="button" type="button" value="подтвердить" onclick="level1()">
+				</div>
+				<div>
+					<div>
+						<p>Мин сумма <input type="text" id="rez_min"></p>
+					</div>
+					<div >
+						<p>Макс. сумма <input type="text" id="rez_max"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="">
+				JS скрипт заходит ооочень туго! 
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		let y = document.getElementById("rez_min"); 
+		let z = document.getElementById("rez_max"); 
+
+		function level1() {
+			let a = parseInt(document.getElementById("A").value);
+			let b = parseInt(document.getElementById("B").value);
+			let c = parseInt(document.getElementById("C").value);
+			let d = parseInt(document.getElementById("D").value);
+			let e = parseInt(document.getElementById("E").value);
+			let j = Math.min(a, b, c, d, e);
+			let u = Math.max(a, b, c, d, e);
+
+
+			if (j == a) {
+				document.getElementById("rez_min").value = "Январь сумма = " + j;}
+				if (j == b) {
+					document.getElementById("rez_min").value = "Февраль сумма = " +j;}
+					if (j == c) {
+						document.getElementById("rez_min").value = "Март сумма = " +j;}
+						if (j == d) {
+							document.getElementById("rez_min").value = "Апрель сумма = " +j;}
+							if (j == e) {
+								document.getElementById("rez_min").value = "Май сумма = " +j;}
+
+
+								if (u == a) {
+									document.getElementById("rez_max").value = "Январь сумма = " + u;}
+									if (u == b) {
+										document.getElementById("rez_max").value = "Февраль сумма = " +u;}
+										if (u == c) {
+											document.getElementById("rez_max").value = "Март сумма = " +u;}
+											if (u == d) {
+												document.getElementById("rez_max").value = "Апрель сумма = " +u;}
+												if (u == e) {
+													document.getElementById("rez_max").value = "Май сумма = " +u;}
+												}
+											</script>
+
+										</body>
+
+										</html>
+
+
+
+

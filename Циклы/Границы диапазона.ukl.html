@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Первая программа</title>
+</head>
+<body>
+<script>
+	var x = Number(prompt("Первое число"));
+    var y = Number(prompt("Второе число"));
+        function vse() {
+            console.log("Числа диапазона:");
+        for (var i = x; i <= y; i++) {
+        if (i)
+            console.log(i);
+            }
+        }
+        function chet() {
+            console.log("Чётные:");
+        for (var i = x; i <= y; i++) {
+        if (i%2 ==0)
+            console.log(i);
+            }
+        }
+        function nechet() {
+            console.log("Не чётные:");
+        for (var i = x; i <= y; i++) {
+            if (i%2 !=0)
+            console.log(i);
+            }
+        }       
+        function krat() {
+            console.log("Кратные 7:");
+        for (var i = x; i <= y; i++) {
+            if (i%7 ==0)
+            console.log(i);
+            }
+        }
+        function vse1() {
+            console.log("Числа диапазона:");
+        for (var i = y; i <= x; i++) {
+        if (i)
+            console.log(i);
+            }
+        }
+        function chet1() {
+            console.log("Чётные:");
+        for (var i = y; i <= x; i++) {
+        if (i%2 ==0)
+            console.log(i);
+            }
+        }
+        function nechet1() {
+            console.log("Не чётные:");
+        for (var i = y; i <= x; i++) {
+            if (i%2 !=0)
+            console.log(i);
+            }
+        }       
+        function krat1() {
+            console.log("Кратные 7:");
+        for (var i = y; i <= x; i++) {
+            if (i%7 ==0)
+            console.log(i);
+            }
+        }
+    if (x<y)
+    {vse(); chet(); nechet(); krat();}
+    else if (x>y)
+    {vse1(); chet1(); nechet1(); krat1();}  
+    else 
+    {console.log("Нулевой диапазон");}
+</script>
+</body>
+</html>
